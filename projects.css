@@ -1,0 +1,23 @@
+.item .text {
+    padding: 2px 16px;
+}
+
+.item{
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.5s;
+    width: 250px;
+}
+.item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

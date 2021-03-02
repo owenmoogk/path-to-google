@@ -1,0 +1,91 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14;
+}
+
+/* highlights */
+::selection{
+    background: lightgrey;
+    color: black;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: grey; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: lightslategrey; 
+}
+
+
+body{
+    margin: 0;
+    background-color: rgb(240,240,240);
+}
+.google-header-logo{
+    width: 100px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    height: 80px;
+    width: 100%;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.nav a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+}
+
+.nav a:hover{
+    color: black;
+}
+
+.nav a.active{
+    border-bottom: 3px solid blue;
+}
+#main{
+    width: 80%;
+    margin: auto;
+}
+
+.box{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 30px;
+    transition: 0.5s;
+}
+.box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+}
+
+ul.todo, ul.completed{
+    list-style: none;
+}
+  
+ul.completed li:before {
+    content: '✔️ ';
+}
+
+ul.todo li:before{
+    content: "➖ ";
+}
